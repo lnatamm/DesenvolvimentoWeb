@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        Cadastro de Suco
+    </h3>
+    <form method="get" action="#">
+        <label for="nome_empresa">Nome da Empresa</label>
+        <input type="text" name="nome_empresa" placeholder="Nome da Empresa"><br>
+        <input type="text" name="suco_nome" placeholder="Nome do Suco"><br>
+        <input type="number" name="suco_valor" placeholder="R$00.00"><br>
+        <input type="email" name="suco_email_vendendor" placeholder="Email"><br>
+        <input type="date" name="suco_data" placeholder="Data"><br>
+        <input type="submit" value="Enviar">
+
+        <p>
+            Sabor do Suco
+        </p>
+        <label for="fsuco_sabor">Laranja</label>
+        <input type="radio" id="suco_sabor" value="laranja">
+        <label for="fsuco_sabor">Uva</label>
+        <input type="radio" id="suco_sabor" value="uva">
+        <label for="fsuco_sabor">Tamarindo</label>
+        <input type="radio" id="suco_sabor" value="tamarindo">
+
+        <p>
+            Misture os Sabores
+        </p>
+        <label for="suco_sabor_variado">Laranja</label>
+        <input type="checkbox" id="suco_sabor_variado" name="suco_sabor_laranja" value="laranja_variado">
+    </form>
+</body>
+</html>
