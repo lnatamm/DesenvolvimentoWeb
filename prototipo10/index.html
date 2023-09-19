@@ -27,30 +27,51 @@
             color: white;
         }
         .nomeSobrenome>span{
-            margin-left: 2%;
-            margin-right: 15%;
+            margin-left: 20px;
+            margin-right: 180px;
         }
         .empresa>span{
-            margin-left: 2%;  
-            margin-right: 27%; 
+            margin-left: 20px;  
+            margin-right: 260px; 
         }
         .empresa>input{
-            width: 53%;
+            width: 346px;
         }
         .email>span{
-            margin-left: 2%;
-            margin-right: 31%;
+            margin-left: 20px;
+            margin-right: 285px;
         }
         .email>input{
-            width: 53%;
+            width: 346px;
         }
         .telefoneDDD>span{
-            margin-left: 2%;
-            margin-right: 17%;
+            margin-left: 20px;
+            margin-right: 190px;
         }
         .dddInput{
-            width: 6%;
+            width: 50px;
             margin-right: 2px;
+        }
+        .telefoneInput{
+            width: 286px;
+        }
+        .sexo>span{
+            margin-left: 20px;
+            margin-right: 290px;
+        }
+        .iniciante{
+            margin-left: 20px;
+        }
+        .enviar{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .enviar>input{
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+            border: 0;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -84,7 +105,7 @@
                     Telefone com DDD
                 </span>
                 <input type="number" id="4" name="DDD_input" placeholder="DDD" class="dddInput">
-                <input type="tel" id="5" name="telefone_input" placeholder="Telefone"> 
+                <input type="tel" id="5" name="telefone_input" placeholder="Telefone" class="telefoneInput"> 
             </div>
             <div class="sexo">
                 <span>
@@ -109,6 +130,9 @@
                 <span>
                     Não
                 </span>
+            </div>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
             </div>
         </form>
     </div>
