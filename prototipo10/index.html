@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        h1{
+            background-color: blue;
+            color: white;
+            border: 1px solid red;
+        }
+        .nomeSobrenome{
+            display: flex;
+        }
+        .telefoneDDD{
+            display: flex;
+        }
+        .formulario{
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+        .nomeSobrenome>span{
+            margin-left: 2%;
+            margin-right: 15%;
+        }
+        .empresa>span{
+            margin-left: 2%;  
+            margin-right: 27%; 
+        }
+        .empresa>input{
+            width: 53%;
+        }
+        .email>span{
+            margin-left: 2%;
+            margin-right: 31%;
+        }
+        .email>input{
+            width: 53%;
+        }
+        .telefoneDDD>span{
+            margin-left: 2%;
+            margin-right: 17%;
+        }
+        .dddInput{
+            width: 6%;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <div class="titulo">
+            <h1>Formulário de Cadastro</h1>
+        </div>
+        <form method="get" action="#">
+            <div class="nomeSobrenome">
+                <span>
+                    Nome e Sobrenome
+                </span>
+                <input type="text" id="0" name="nome_input" placeholder="Nome">
+                <input type="text" id="1" name="sobrenome_input" placeholder="Sobrenome">
+            </div>
+            <div class="empresa">
+                <span>
+                    Empresa
+                </span>
+                <input type="text" id="2" name="empresa_input" placeholder="Empresa">
+            </div>
+            <div class="email">
+                <span>
+                    Email
+                </span>
+                <input type="email" id="3" name="email_input" placeholder="Email">
+            </div>
+            <div class="telefoneDDD">
+                <span>
+                    Telefone com DDD
+                </span>
+                <input type="number" id="4" name="DDD_input" placeholder="DDD" class="dddInput">
+                <input type="tel" id="5" name="telefone_input" placeholder="Telefone"> 
+            </div>
+            <div class="sexo">
+                <span>
+                    Sexo
+                </span>
+                <select id="6" name="sexo_select">
+                    <option value="SelecioneOpcao">~Selecione a Opção</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+            <div class="iniciante">
+                <p>
+                    Você é Iniciante?
+                </p>
+                <input type="radio" id="radioSim" name="radioIniciante">
+                <span>
+                    Sim
+                </span>
+                <input type="radio" id="radioNao" name="radioIniciante">
+                <span>
+                    Não
+                </span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
