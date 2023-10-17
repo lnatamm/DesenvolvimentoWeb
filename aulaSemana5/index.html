@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Semana 5 - Atributor Form</title>
+    <style>
+        input{
+            margin: 8px 0 8px 0;
+        }
+        h5{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <span>
+            <label for="fnome">
+                Nome
+            </label>
+        </span>
+        <input type="text" name="nome_input" placeholder="nome" disabled hidden><br>
+        <span>
+            <label for="fnota">
+                Nota para o Ifood
+            </label>
+        </span>
+        <input type="number" name="nota" min="1" max="5" required><br>
+        <input type="range" name="notaEntregador" value="0" min="1" max="5" oninput="num.value = this.value"><output id="num">0</output><br>
+        <h5">Para finalizar o cadastro, confirme sua senha:</h5>
+        <input type="password" name="password_cliente" placeholder="senha" minlength="8" maxlength="16"><br>
+        <h5>
+            Anexe uma imagem do seu pedido:
+        </h5>
+        <input type="file" name="filePedido">
+        <input type="submit" name="enviar" value="Enviar"><input type="reset" value="Limpar">
+        <!--<input type="number" name="">!-->
+    </form>
+</body>
+</html>

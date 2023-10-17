@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+        .campo_de_dados>fieldset{
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Deixe um Comentário</h2>
+    <form method="get" action="#">
+        <div>
+            <label for="finputName">Nome:</label>
+        </div>
+        <input type="text" id="nomeUsuario" name="inputNome"><br>
+        <div>
+            <label for="finputEmail">Email:</label>
+        </div>
+        <input type="email" id="emailUsuario" name="inputEmail"><br>
+        <div>
+            <label for="finputWebsite">Website:</label>
+        </div>
+        <input type="url" id="websiteUsuario" name="inputWebsite"><br>
+        <div>
+            <label for="finputComentario">Comentário:</label>
+        </div>
+        <textarea name="textareaComentario" id="comentario" cols="30" rows="10"></textarea>
+        <input type="submit" id="botaoEnviar" name="submit">
+    </form>
+    <h2>Login</h2>
+    <form method="get" action="#">
+        <label for="fnomeInput">Nome</label>
+        <input type="text" name="nomeInput"><br>
+        <label for="">Senha</label>
+        <input type="password" name="senhaInput"><br>
+        <input type="submit">
+        <a href="#">Esqueceu a senha?</a>
+    </form>
+    <h2>Envie uma mensagem preenchendo o fórmulário abaixo</h2>
+    <form method="get" action="#">
+        <span>Nome:</span>
+        <input type="text"><br>
+        <label for="">Seu Telefone:</label>
+        <input type="text"><br>
+        <label for="">Seu Email:</label>
+        <input type="text"><br>
+        <label for="">Deseja receber nossas novidades?</label>
+        <span>Sim</span>
+        <input type="radio" name="radio1">
+        <span>Não</span>
+        <input type="radio" name="radio1"><br>
+        <span>Sua mensagem:</span>
+        <textarea name="mensagem" id="" cols="30" rows="3" placeholder="Mensagem*"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    <form method="get" action="#">
+        <div class="campo_de_dados">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <span>Nome:</span>
+                <input type="text" name="nome_input">
+                <span>Endereço:</span>
+                <input type="text" name="endereco_input">
+                <span>Cidade:</span>
+                <input type="text">
+                <span>Estado</span>
+                <select name="estado_select" id="estado">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+        body{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="#" target="_blank" autocomplete="on" novalidate>
+        <fieldset style="width: 10%;">
+            <legend>Dados pessoais</legend>
+            <input type="text" placeholder="Insira seu nome" name="nome_input" id="nome" autocomplete="off"><br>
+            <input type="number" placeholder="CPF:" name="cpf" id="cpfInput" required minlength="11" maxlength="11">
+        </fieldset>
+        <textarea name="comentario" id="" cols="30" rows="10" style="resize: none;" placeholder="Teste"></textarea><br>
+        <select name="" id="" required>
+            <option value="#" selected disabled hidden>~Selecione o Curso</option>
+            <option value="ciencias da computacao">Ciências da Computação</option>
+            <option value="medicia">Medicina</option>
+            <option value="engenharia">Engenharia</option>
+        </select><br>
+        <label for="fdatalist">Datalist</label>
+        <input type="text" list="courses" name="secondary_courses">
+        <datalist name="datalist" id="courses" required>
+            <option value="ciencias da computacao">
+            <option value="medicia"></option>
+            <option value="engenharia">
+        </datalist><br>
+        <button type="button" onclick="document.write('Hello World')">Aperte</button>
+        <input type="submit" name="submit_input" id="submit" value="Submeter">
+    </form>
+</body>
+</html>
